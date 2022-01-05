@@ -1,0 +1,459 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comforter+Brush&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: "Poppins";
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    cursor: default;
+}
+
+.container {
+    background: url(images/asset1-blackgradient.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: relative;
+}
+
+.hero {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+
+nav {
+    height: 12vh;
+    width: 100vw;
+    position: fixed;
+    left: 0%;
+    top: 0%;
+    z-index: 3;
+}
+
+nav .navInner {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+nav .navInner .menuBgArea {
+    height: 70px;
+    width: 70px;
+    background: crimson;
+    position: absolute;
+    top: 22%;
+    left: 89.2%;
+    z-index: 96;
+}
+
+nav .navInner .menuTouchArea {
+    height: 50px;
+    width: 60px;
+    background: transparent;
+    position: absolute;
+    top: 30%;
+    left: 89.75%;
+    z-index:97;
+}
+
+nav .navInner .line {
+    height: 4px;
+    width: 40px;
+    background-color: white;
+    border-radius: 10px;
+    z-index: 96;
+}
+
+nav .navInner .line1 {
+    position: absolute;
+    top: 40%;
+    left: 90%;
+    transform: rotate(0deg);
+    transition: all 0.4s ease-in-out;
+}
+
+nav .navInner .line2 {
+    position: absolute;
+    top: 50%;
+    left: 90%;
+    opacity: 1;
+    transition: all 0.4s ease-in-out;
+}
+
+nav .navInner .line3 {
+    position: absolute;
+    top: 60%;
+    left: 90%;
+    transform: rotate(0deg);
+    transition: all 0.4s ease-in-out;
+}
+
+nav .navInner .menu {
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    position: absolute;
+    top: 0%;
+    left: 100%;
+    transition: all 0.4s ease-in-out;
+    z-index: 94;
+}
+
+nav .navInner .menu .menuInner {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+nav .navInner .menu .menuInner div {
+    height: 40px;
+    width: 40px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    color: black;
+    font-weight: 700;
+    transition: all 0.4s ease-in-out;
+}
+
+nav .navInner .menu .menuInner div:hover {
+    background-color: black;
+    color: crimson;
+}
+
+nav .navInner .menu .menuInner .about div {
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%,-50%);
+    z-index: 2;
+}
+nav .navInner .menu .menuInner .works div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 2;
+}
+nav .navInner .menu .menuInner .contact div {
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    transform: translate(-50%,-50%);
+    z-index: 2;
+}
+
+nav .navInner .menu .menuInner h2 {
+    font-size: 1rem;
+    background-color: crimson;
+    width: 100px;
+    text-align: center;
+    padding: 0.5rem;
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+}
+
+nav .navInner .menu .menuInner h2.aboutText {
+    position: absolute;
+    top: 57%;
+    left: 40%;
+    transform: translate(-50%,-50%);
+}
+nav .navInner .menu .menuInner h2.worksText {
+    position: absolute;
+    top: 57%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+nav .navInner .menu .menuInner h2.contactText {
+    position: absolute;
+    top: 57%;
+    left: 60%;
+    transform: translate(-50%,-50%);
+}
+
+nav .navInner .menu .menuInner .about:hover ~ .aboutText {
+    opacity: 1;
+}
+nav .navInner .menu .menuInner .works:hover ~ .worksText {
+    opacity: 1;
+}
+nav .navInner .menu .menuInner .contact:hover ~ .contactText {
+    opacity: 1;
+}
+
+nav .navInner .menu .menuInner .social {
+    display: flex;
+    justify-content: space-around;
+    width: 800px;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: transparent;
+}
+
+nav .navInner .menu .menuInner .social a {
+    background-color: transparent;
+    padding: 0;
+    color: white;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    transition: all 0.4s ease-in-out;
+}
+
+nav .navInner .menu .menuInner .social a:hover {
+    color: crimson;
+}
+
+.hero .homePage {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    transition: all 0.4s ease-in-out;
+    z-index: 2;
+}
+
+.hero .homePage .homePageInner {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.hero .homePage .homePageInner .initial {
+    color: white;
+    font-size: 40rem;
+    font-weight: 500;
+    /* font-family: 'Comforter Brush', cursive; */
+    font-family: 'Pacifico', cursive;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -webkit-text-fill-color:  transparent;
+    -webkit-text-stroke-width: 3px;
+    cursor: default;
+    transition: all 0.3s ease-in-out;
+}
+
+.hero .homePage .homePageInner .initial:hover {
+    -webkit-text-fill-color:  white;
+}
+
+.hero .homePage .homePageInner img {
+    height: 30px;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+} 
+
+.hero .homePage .homePageInner h2 {
+    font-size: 1rem;
+    color: black;
+    position: absolute;
+    top: 93%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.aboutSection {
+    height: 50vh;
+    width: 100vw;
+    position: relative;
+    overflow: hidden;
+}
+
+.aboutSection .info {
+    width: 50%;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 2;
+}
+
+.aboutSection .info h1 {
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.aboutSection .info h2 {
+    font-size: 6rem;
+    font-weight: 200;
+}
+
+.aboutSection .info h3 {
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.aboutSection .square1 {
+    height: 10px;
+    width: 100px;
+    background-color: black;
+    position: absolute;
+    top: 0%;
+    animation: moveRight 3s ease-in-out infinite;
+    z-index: 2;
+}
+
+@keyframes moveRight {
+    0% {
+        left: 0%;
+    }
+    50% {
+        left: 95%;
+    }
+    100% {
+        left: 0%;
+    }
+}
+
+.aboutSection .square2 {
+    height: 10px;
+    width: 100px;
+    background-color: black;
+    position: absolute;
+    top: 0%;
+    animation: moveLeft 3s ease-in-out infinite;
+    z-index: 2;
+}
+
+@keyframes moveLeft {
+    0% {
+        left: 95%;
+    }
+    50% {
+        left: 0%;
+    }
+    100% {
+        left: 95%;
+    }
+}
+
+
+.skillsSection {
+    height: 60vh;
+    width: 100vw;
+    margin-bottom: 10rem;
+}
+
+.skillsSectionInner {
+    height: 100%;
+    width: 90%;
+    margin: auto;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.skill {
+    height: 500px;
+    width: 20%;
+    background-color: rgb(0, 0, 0);
+    border-radius: 0px;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.4s ease-in-out;
+}
+
+.skill h1 {
+    height: 65%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+.skill1 h1 {
+    background-color: crimson;
+}
+.skill2 h1 {
+    background-color: crimson;
+}
+.skill3 h1 {
+    background-color: crimson;
+}
+
+.skill .skillTopics {
+    height: 35%;
+    padding-top: 3rem;
+}
+
+.skill .skillTopics h2 {
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: white;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.banner {
+    height: 10vh;
+    width: 100vw;
+    background-color: black;
+    display: flex;
+}
+
+.banner h1 {
+    width: 50%;
+    font-size: 4rem;
+    color: crimson;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner h2 {
+    width: 50%;
+    font-size: 1.5rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner h2 a {
+    font-size: 1.5rem;
+    font-weight: 700;
+    border-bottom: 2px solid white;
+    letter-spacing: 2px;
+    color: crimson;
+}
