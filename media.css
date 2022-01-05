@@ -1,0 +1,400 @@
+@import url(/style.css);
+
+@media (max-width:480px) {
+       .desktop-mockup {
+           display: none;
+       }
+       .mobile-mockup header {
+           height: 50vh;
+           width: 100vw;
+           background: url(images/img3.jpg);
+           background-size: 200%;
+           background-position: center;
+           background-repeat: no-repeat;
+           position: relative;
+       }
+       .mobile-mockup header nav {
+           height: 6vh;
+           width: 100vw;
+       }
+
+       .mobile-mockup header nav img {
+           height: 30px;
+           position: absolute;
+           top: 5%;
+           right: 5%;
+       }
+
+       .mobile-mockup .white-icon {
+           z-index: 5;
+           opacity: 0;
+       }
+       .mobile-mockup .black-icon {
+           z-index: 6;
+           opacity: 1;
+       }
+
+       .mobile-mockup header nav .menu-box {
+           height: 50vh;
+           width: 100vw;
+           position: absolute;
+           top: 0%;
+           left: -100%;
+           background-color: black;
+           display: flex;
+           flex-direction: column;
+           justify-content: center;
+           align-items: center;
+           z-index: 2;
+           transition: all 0.3s ease-in-out;
+       }
+
+       .mobile-mockup header nav .menu-box ul {
+           height: 50%;
+           width: 50%;
+           display: flex;
+           flex-direction: column;
+           justify-content: space-around;
+           align-items: center;
+       }
+
+       .mobile-mockup header nav .menu-box ul li a {
+           font-size: 2.5rem;
+           font-weight: 800;
+           color: white;
+       }
+
+       .mobile-mockup header .hero {
+           height: 44vh;
+           width: 100vw;
+           position: relative;
+       }
+
+       .mobile-mockup header .hero h1 {
+            font-family: 'Bebas Neue', cursive;
+            font-size: 4rem;
+            width: 100px;
+            text-align: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+       }
+
+       .mobile-mockup .about {
+           height: 100vh;
+           width: 100vw;
+           position: relative;
+       }
+
+       .m-heading {
+           font-size: 1.5rem;
+           letter-spacing: 3px;
+           font-weight: 400;
+           position: absolute;
+           top: 5%;
+           left: 50%;
+           transform: translate(-50%,-50%);
+       }
+
+       .topic-box {
+           height: 80%;
+           width: 60%;
+           position: absolute;
+           top: 50%;
+           left: 50%;
+           transform: translate(-50%,-50%);
+           display: flex;
+           flex-direction: column;
+           justify-content: space-between;
+           align-items: center;
+           z-index: 5;
+       }
+
+       .topics {
+            height: 25%;
+            width: 100%;
+            display: flex;
+           flex-direction: column;
+           justify-content: center;
+           align-items: center;
+       }
+
+       .topic1 {
+           background-color: #fe6c00;
+       }
+       .topic2 {
+           background-color: #006e9b;
+       }
+       .topic3 {
+           background-color: #dfd8bc;
+       }
+       .topic4 {
+           background-color: goldenrod;
+       }
+
+       .topics h1 {
+            font-size: 1rem;
+            color: white;
+            letter-spacing: 2px;
+       }
+
+       .mobile-mockup .expertise {
+           height: 100vh;
+           width: 100vw;
+           position: relative;
+       }
+
+       .expertise h2 {
+           font-size: 1rem;
+           padding: 1rem 2rem;
+           background-color: black;
+           color: white;
+           width: 150px;
+           text-align: center;
+           letter-spacing: 2px;
+           position: absolute;
+           top: 10%;
+           left: 50%;
+           transform: translate(-50%,-50%);
+       }
+
+       .mobile-mockup .expertise ul {
+           height: 80%;
+           width: 95%;
+           position: absolute;
+           top: 55%;
+           left: 50%;
+           transform: translate(-50%,-50%);
+       }
+
+       .mobile-mockup .expertise ul li {
+           height: 10%;
+           width: 100%;
+           display: flex;
+           flex-direction: column;
+           justify-content: space-evenly;
+           align-items: center;
+       }
+
+       .mobile-mockup .expertise ul li h3 {
+           font-size: 1.2rem;
+           padding: 1rem 2rem;
+           color: black;
+           width: 250px;
+           text-align: center;
+           letter-spacing: 2px;
+       }
+
+       .mobile-mockup .expertise ul li .prog-bar {
+           height: 20px;
+           width: 90%;
+           background-color: black;
+           position: relative;
+       }
+
+       .mobile-mockup .expertise ul li .prog-bar .prog {
+           transition: all 1s ease-in-out;
+       }
+
+       .mobile-mockup .expertise ul li .prog-bar .prog1 {
+           position: absolute;
+           top: 0%;
+           left: 0%;
+           height: 100%;
+           width: 0%;
+           background-color: goldenrod;
+       }
+       .mobile-mockup .expertise ul li .prog-bar .prog2 {
+           position: absolute;
+           top: 0%;
+           left: 0%;
+           height: 100%;
+           width: 0%;
+           background-color: goldenrod;
+       }
+       .mobile-mockup .expertise ul li .prog-bar .prog3 {
+           position: absolute;
+           top: 0%;
+           left: 0%;
+           height: 100%;
+           width: 0%;
+           background-color: goldenrod;
+       }
+       .mobile-mockup .expertise ul li .prog-bar .prog4 {
+           position: absolute;
+           top: 0%;
+           left: 0%;
+           height: 100%;
+           width: 0%;
+           background-color: goldenrod;
+       }
+       .mobile-mockup .expertise ul li .prog-bar .prog5 {
+           position: absolute;
+           top: 0%;
+           left: 0%;
+           height: 100%;
+           width: 0%;
+           background-color: goldenrod;
+       }
+       .mobile-mockup .expertise ul li .prog-bar .prog6 {
+           position: absolute;
+           top: 0%;
+           left: 0%;
+           height: 100%;
+           width: 0%;
+           background-color: goldenrod;
+       }
+       .mobile-mockup .expertise ul li .prog-bar .prog7 {
+           position: absolute;
+           top: 0%;
+           left: 0%;
+           height: 100%;
+           width: 0%;
+           background-color: goldenrod;
+       }
+       .mobile-mockup .expertise ul li .prog-bar .prog8 {
+           position: absolute;
+           top: 0%;
+           left: 0%;
+           height: 100%;
+           width: 0%;
+           background-color: goldenrod;
+       }
+       .mobile-mockup .expertise ul li .prog-bar .prog9 {
+           position: absolute;
+           top: 0%;
+           left: 0%;
+           height: 100%;
+           width: 0%;
+           background-color: goldenrod;
+       }
+       .mobile-mockup .expertise ul li .prog-bar .prog10 {
+           position: absolute;
+           top: 0%;
+           left: 0%;
+           height: 100%;
+           width: 0%;
+           background-color: goldenrod;
+       }
+
+
+       .mobile-mockup .contact {
+           height: 100vh;
+           width: 100vw;
+           position: relative;
+       }
+
+       .contact-box {
+           height: 80%;
+           width: 85%;
+           position: absolute;
+           top: 50%;
+           left: 50%;
+           transform: translate(-50%,-50%);
+           display: flex;
+           flex-direction: column;
+       }
+
+       .contact-box form {
+           height: 45%;
+       }
+       .contact-box .map {
+           height: 45%;
+       }
+       .contact-box .details {
+           height: 10%;
+           display: flex;
+           flex-direction: column;
+           justify-content: space-evenly;
+           align-items: center;
+           background-color: rgba(218, 165, 32, 0.589);
+       }
+
+       .contact-box form input {
+            font-family: 'Montserrat', sans-serif;
+       }
+       .contact-box form textarea {
+            font-family: 'Montserrat', sans-serif;
+            border: none;
+            outline: none;
+            background-color: rgb(224, 224, 224);
+            height: 150px;
+            width: 100%;
+            resize: none;
+            padding: 1rem;
+       }
+       .contact-box form input[type="text"] {
+           border: none;
+           outline: none;
+           background-color: rgb(224, 224, 224);
+           height: 30px;
+           width: 100%;
+           margin-bottom: 1rem;
+           padding: 1rem;
+       }
+       .contact-box form .submit,.reset {
+           border: none;
+           outline: none;
+           background-color: black;
+           color: white;
+           padding: 1rem 2rem;
+           font-size: 1rem;
+           letter-spacing: 3px;
+           font-family: 'Montserrat', sans-serif;
+           font-weight: 700;
+       }
+
+
+       .contact-box .map iframe {
+           height: 100%;
+           width: 100%;
+           border: none;
+       }
+
+
+       .contact-box .details p {
+           font-size: 1rem;
+           font-weight: 700;
+
+       }
+
+
+       footer {
+           height: 20vh;
+           width: 100vw;
+           background-color: black;
+           color: white;
+           position: relative;
+       }
+
+       footer h1 {
+            font-family: 'Bebas Neue', cursive;
+            font-size: 2rem;
+            letter-spacing: 3px;
+            width: 100%;
+            text-align: center;
+            position: absolute;
+            top: 40%;
+           left: 50%;
+           transform: translate(-50%,-50%);
+       }
+
+       footer p {
+           font-size: 0.7rem;
+        letter-spacing: 1px;
+        width: 100%;
+        text-align: center;
+        position: absolute;
+        top: 60%;
+       left: 50%;
+       transform: translate(-50%,-50%);
+       }
+
+
+
+
+
+
+
+}
